@@ -10,18 +10,24 @@
   display: inline-block;
   margin: 0 20px
 }
-button {
+/* button {
   height: 50px;
   width:50px;
   font-size: 1.2rem;
   margin: 5px;
-}
+} */
 #componentMng {
   height: auto;
   width: auto;
 }
 div {
   margin: 10px;
+}
+#dogImg {
+  display:block;
+  width: 300px;
+  height: 400px;
+  object-fit:cover;
 }
 
 

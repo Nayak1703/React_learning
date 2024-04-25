@@ -3,20 +3,21 @@ import './App.css';
 // import Counter from "./session-2/counter.jsx"
 // import Forms from "./session-3/Forms.js"
 // import ThForm from './session-2/thForm';
-import LifeCycleComponent from "./session-4/lifecycleComponents.jsx"
+// import LifeCycleComponent from "./session-4/lifecycleComponents.jsx"
+import DogPics from "./session-3/thDogPics.jsx";
 
 class App extends React.Component {
   constructor(){
     super()
     this.state ={
-      showCounter : true
+      // showCounter : true
     }
   }
-  btnManage = () => {
-    this.setState((prevState)=>({
-      showCounter:!prevState.showCounter
-    }))
-  }
+  // btnManage = () => {
+  //   this.setState((prevState)=>({
+  //     showCounter:!prevState.showCounter
+  //   }))
+  // }
 
   render() {
     return (
@@ -36,8 +37,10 @@ class App extends React.Component {
       {/* <LifeCycleComponent /> */}
 
       {/* to demonstrate the componentWillUnmount() */}
-      <button id="componentMng" onClick={this.btnManage}>Show/Hide Component</button>
-      {this.state.showCounter?<LifeCycleComponent/>:null}
+      {/* <button id="componentMng" onClick={this.btnManage}>Show/Hide Component</button>
+      {this.state.showCounter?<LifeCycleComponent/>:null} */}
+
+      <DogPics/>
     </div>
     )
   }
