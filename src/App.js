@@ -4,7 +4,9 @@ import './App.css';
 // import Forms from "./session-3/Forms.js"
 // import ThForm from './session-2/thForm';
 // import LifeCycleComponent from "./session-4/lifecycleComponents.jsx"
-import DogPics from "./session-3/thDogPics.jsx";
+// import DogPics from "./session-3/thDogPics.jsx";
+import Fc_1 from "./session-4/functionComponent.jsx"
+
 
 class App extends React.Component {
   constructor(){
@@ -27,20 +29,26 @@ class App extends React.Component {
 
       {/* giving properties to child class */}
       {/* this is the component tag, when ever react read this, the entire code of that component will get replace by tag */}
-      
+
       {/* <Counter diff={1}/>
       <Counter diff={10}/> */}
 
       {/* take home Form */}
       {/* <ThForm/> */}
 
+      {/* learned about component lifecycle and it method */}
       {/* <LifeCycleComponent /> */}
 
       {/* to demonstrate the componentWillUnmount() */}
       {/* <button id="componentMng" onClick={this.btnManage}>Show/Hide Component</button>
       {this.state.showCounter?<LifeCycleComponent/>:null} */}
 
-      <DogPics/>
+      {/* take home dogs-pics */}
+      {/* <DogPics/> */}
+
+      {/* functional components */}
+      <Fc_1 name={"yash"} diff={10}/>
+      
     </div>
     )
   }
