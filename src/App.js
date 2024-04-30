@@ -5,28 +5,29 @@ import './App.css';
 // import ThForm from './session-2/thForm';
 // import LifeCycleComponent from "./session-4/lifecycleComponents.jsx"
 // import DogPics from "./session-3/thDogPics.jsx";
-import Fc_1 from "./session-4/functionComponent.jsx"
+// import Fc_1 from "./session-4/functionComponent.jsx"
+import Counter_useEffect from "./session-5/useEffect.jsx"
 
 
 class App extends React.Component {
   constructor(){
     super()
     this.state ={
-      // showCounter : true
+      showCounter : true
     }
   }
-  // btnManage = () => {
-  //   this.setState((prevState)=>({
-  //     showCounter:!prevState.showCounter
-  //   }))
-  // }
+  btnManage = () => {
+    this.setState((prevState)=>({
+      showCounter:!prevState.showCounter
+    }))
+  }
 
   render() {
     return (
       <div className="App">
-      {/* adding form component tag */}
-      {/* <Forms /> */}
 
+      {/* ======> session-2 * <====== */}
+      
       {/* giving properties to child class */}
       {/* this is the component tag, when ever react read this, the entire code of that component will get replace by tag */}
 
@@ -36,6 +37,18 @@ class App extends React.Component {
       {/* take home Form */}
       {/* <ThForm/> */}
 
+
+      {/* ======> session-3 * <====== */}
+
+      {/* adding form component tag */}
+      {/* <Forms /> */}
+
+      {/* take home dogs-pics */}
+      {/* <DogPics/> */}
+     
+
+      {/* ======> session-4 * <====== */}
+
       {/* learned about component lifecycle and it method */}
       {/* <LifeCycleComponent /> */}
 
@@ -43,12 +56,21 @@ class App extends React.Component {
       {/* <button id="componentMng" onClick={this.btnManage}>Show/Hide Component</button>
       {this.state.showCounter?<LifeCycleComponent/>:null} */}
 
-      {/* take home dogs-pics */}
-      {/* <DogPics/> */}
 
       {/* functional components */}
-      <Fc_1 name={"yash"} diff={10}/>
-      
+      {/* <Fc_1 name={"yash"} diff={10}/> */}
+
+      {/* take home activity of session-4, BookAppointment */}
+      {/* <BookAppointment/> */}
+
+
+      {/* ======> session-5 * <====== */}
+
+      {/* to demonstrate the componentWillUnmount() using useEffect*/}
+      {/* flow -> onClick -> btnManage -> change-the-state -> render() -> ternery-operator -> 
+      check-wheater-component-have-useEffect()-variation-4 -> if yes execute useEffect() -> then come back to app.js -> execute null*/}
+      <button id="componentMng" onClick={this.btnManage}>Show/Hide Component</button>
+      {this.state.showCounter?<Counter_useEffect diff={10}/>:null}
     </div>
     )
   }

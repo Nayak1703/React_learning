@@ -30,6 +30,10 @@ div {
   object-fit:cover;
 }
 
+.formInputs{
+  display: block;
+}
+
 
 .App-logo {
   height: 40vmin;
