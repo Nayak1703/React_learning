@@ -6,7 +6,8 @@ import './App.css';
 // import LifeCycleComponent from "./session-4/lifecycleComponents.jsx"
 // import DogPics from "./session-3/thDogPics.jsx";
 // import Fc_1 from "./session-4/functionComponent.jsx"
-import Counter_useEffect from "./session-5/useEffect.jsx"
+// import Counter_useEffect from "./session-5/useEffect.jsx"
+import AlbumApp from './session-5/albumApp.jsx';
 
 
 class App extends React.Component {
@@ -69,8 +70,12 @@ class App extends React.Component {
       {/* to demonstrate the componentWillUnmount() using useEffect*/}
       {/* flow -> onClick -> btnManage -> change-the-state -> render() -> ternery-operator -> 
       check-wheater-component-have-useEffect()-variation-4 -> if yes execute useEffect() -> then come back to app.js -> execute null*/}
-      <button id="componentMng" onClick={this.btnManage}>Show/Hide Component</button>
-      {this.state.showCounter?<Counter_useEffect diff={10}/>:null}
+      
+      {/* <button id="componentMng" onClick={this.btnManage}>Show/Hide Component</button>
+      {this.state.showCounter?<Counter_useEffect diff={10}/>:null} */}
+
+      {/* Album application */}
+      <AlbumApp/>
     </div>
     )
   }
