@@ -6,21 +6,21 @@
 /* .App {
   text-align: center;
 } */
-#counterCount {
+/* #counterCount {
   display: inline-block;
   margin: 0 20px
-}
+} */
 /* button {
   height: 50px;
   width:50px;
   font-size: 1.2rem;
   margin: 5px;
 } */
-#componentMng {
+/* #componentMng {
   height: auto;
   width: auto;
-}
-div {
+} */
+/* div {
   margin: 10px;
 }
 #dogImg {
@@ -28,7 +28,7 @@ div {
   width: 300px;
   height: 400px;
   object-fit:cover;
-}
+} */
 
 .formInputs{
   display: block;
