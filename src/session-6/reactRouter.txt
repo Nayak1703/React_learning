@@ -1,0 +1,48 @@
+what is routing in website?
+-> is basically to navigate from one page to another page in the webpage & we have associate path to follow for navigation.
+
+
+React routing is special, why?
+-> before framework/libraires like react/angular/vue, etc... developers were using php to make web app,
+in the web-app every page is different file, so when we travel from one page to another page, the entire webpage get reload
+
+so mordern framework/libraires solve this issue by bringing SPA (Single Page Architecture)
+
+
+what is SPA (Single Page Architecture)?
+-> 1. All pages of website will render on single-page (1 html file) without reloading the webpage.
+
+   2. React will load the different pages of same website according to our navigation, on the same single page (1 html file)
+      how? with the help of VDOM and react-reconciliation.
+
+   3. url will show path that we are navigating, but we dont need to reload enitre 
+      webpage when we go to another page of same website 
+
+      so how we will achieve that url's path should change according to our navigation but web-app should not refresh?
+      -> with the help of React-Router
+
+
+What is React-Router?
+-> 1. it is not the part of react library which is given by Meta(facebook)
+   2. it is 3rd party library which is created/maintained by some developers in react community who are not part of META(facebook), 
+      to implement the routing functionality in react-app.
+
+what is React-Router package do?
+-> it helps to synchronise the react app with browser history-stack
+   what does it means?
+   -> suppose we have a react-app and we are navigating inside the react app, suppose we want to render previous/forward page 
+      that we have visited we use <- / -> button, the data of previous/foward page is given to react by browser history 
+
+
+
+How to use React-Router-package?
+-> 1. download the package: "npm install react-router-dom" check is it got added on package.json's dependency section
+   2. <import {BrowserRouter} from 'react-router-dom'> in src/index.js file
+   3.  BrowserRouter -> enables routing functionality to entire app (react-app) & also sync browser history to react-app.
+   4. create home.jsx/routh.jsx to define all the routes in our react-web-app
+
+
+   
+
+
+

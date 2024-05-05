@@ -7,7 +7,9 @@ import './App.css';
 // import DogPics from "./session-3/thDogPics.jsx";
 // import Fc_1 from "./session-4/functionComponent.jsx"
 // import Counter_useEffect from "./session-5/useEffect.jsx"
-import AlbumApp from './session-5/albumApp.jsx';
+// import AlbumApp from './session-5/albumApp.jsx';
+// import AlbumApp_RR from './session-6/albumApp-RR.jsx'
+import Home from './session-6/home-RR.jsx'
 
 
 class App extends React.Component {
@@ -75,7 +77,19 @@ class App extends React.Component {
       {this.state.showCounter?<Counter_useEffect diff={10}/>:null} */}
 
       {/* Album application */}
-      <AlbumApp/>
+      {/* <AlbumApp/> */}
+
+
+      {/* ======> session-6 (react-router) * <====== */}
+
+      {/* insted of calling main component (landing page) we called <Home/> component it will decide the 
+          which compoenent to load on which path (route)
+          
+          example:
+          / -> <AlbumApp_RR.jsx/>
+          /photos/albumId -> <PhotoApp_RR.jsx/>
+      */}
+      <Home/>
     </div>
     )
   }

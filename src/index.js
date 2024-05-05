@@ -4,11 +4,19 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// session-6: we are importing  BrowserRouter component from react-router-dom package
+import {BrowserRouter} from 'react-router-dom';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // i commented <React.StrictMode> beacuse componentDidMount() executing twice
   // <React.StrictMode>
+
+  // BrowserRouter -> enables routing functionality to entire app (react-app) & also sync browser history to react-app
+  <BrowserRouter>
     <App />
+  </BrowserRouter>
+  
   // </React.StrictMode>
 );
 
