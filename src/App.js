@@ -4,12 +4,16 @@ import './App.css';
 // import Forms from "./session-3/Forms.js"
 // import ThForm from './session-2/thForm';
 // import LifeCycleComponent from "./session-4/lifecycleComponents.jsx"
+import BookAppointment from './session-4/BookAppointment_th.jsx';
 // import DogPics from "./session-3/thDogPics.jsx";
 // import Fc_1 from "./session-4/functionComponent.jsx"
 // import Counter_useEffect from "./session-5/useEffect.jsx"
 // import AlbumApp from './session-5/albumApp.jsx';
 // import AlbumApp_RR from './session-6/albumApp-RR.jsx'
-import Home from './session-6/home-RR.jsx'
+// import Home from './session-6/home-RR.jsx'
+// import UseRefExplain from './session-7/useRef.jsx'
+// import LearningMaterialUi from './session-7/materialUi.jsx'
+// import TableGenerateTask from "./session-7/table-task.jsx"
 
 
 class App extends React.Component {
@@ -64,7 +68,7 @@ class App extends React.Component {
       {/* <Fc_1 name={"yash"} diff={10}/> */}
 
       {/* take home activity of session-4, BookAppointment */}
-      {/* <BookAppointment/> */}
+      <BookAppointment/>
 
 
       {/* ======> session-5 * <====== */}
@@ -89,7 +93,16 @@ class App extends React.Component {
           / -> <AlbumApp_RR.jsx/>
           /photos/albumId -> <PhotoApp_RR.jsx/>
       */}
-      <Home/>
+      {/* <Home/> */}
+
+
+      {/* ======> session-7 (useRef, Material-Ui, Debouncing (part-1), 1 problem) * <====== */}
+
+      {/* <UseRefExplain/> */}
+      {/* <LearningMaterialUi/> */}
+
+      {/* <TableGenerateTask/> */}
+
     </div>
     )
   }

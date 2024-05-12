@@ -1,0 +1,41 @@
+Material UI (mui)
+=>  
+1. Don't by-heart Material-UI, use Mui's documentation to implement Mui and understand the concept of Mui
+   and by time & practice concept will get remember.
+
+2. Material-UI is the CSS's framework and powerfull React.js's library
+
+3. React-Material-UI follows guidelines of google's material-design for desing purpose
+
+4. Google's material-design have guidelines of all the things related to style that how to desing 
+   buttons, typography, borders, etc...
+
+5. To implement this Google's material-design in our react-web-app we use Material-UI
+
+
+=======>    Installation of Material UI     <=======
+There are 3 ways to install MUi in our web-app 
+
+1. Deafult way ->
+    npm install @mui/material @emotion/react @emotion/styled
+
+    @mui/material: installing materialUi package
+    @emotion/react: 
+    @emotion/styled: installing this library to enable CSS in JS (to write styling of element in js)
+
+2. Peer dependencies ->
+    it means react & react-dom should installed before installing Material-UI  
+
+3. With styled-components ->
+    npm install @mui/material @mui/styled-engine-sc styled-components
+
+
+=======>    Useage of Material UI's Components in React-web-app     <=======
+
+1. import the component (named-import)
+2. use the component
+3. understand how the component is working, its properties, & its variations.  
+    examples:
+        -   there is 1 propertie which present in every components, it is used when we want to change the 
+            default styling of the component according to our requirment
+            i.e "sx" it is a object and we can give styling in key-value pair inisde the sx's styling 

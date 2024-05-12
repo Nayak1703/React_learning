@@ -1,0 +1,32 @@
+What / Why is useRef?
+->  1. useRef is react hook which is used in certain functionality we want in our component.
+        
+    Requirement:
+        - When we want to access particular element (jsx/html element) through React, without directly accessing DOM.
+        - When we want a variable, & the change of value of the variable should not affect the re-render of the component.
+        - When we want a variable, that value of the variable should not get affected by the re-render of the component.
+
+
+How useRef is used?
+->  - import {useRef} from 'react'  -->  import from react 
+
+    - const variable = useRef(initial-value)
+        => variable - will store the object.
+        => useRef - hook, it returns the object of the single property i.e current.
+        => initial-value - any dataType value u can initialy assign to variable. This argument is ignored after the initial render.
+
+    - example:
+        const inputRef = useRef(null)  //current value of inputRef is null
+
+        console.log(inputRef)
+        =>  {
+                current:null
+            }
+    
+    - it is not recommended to use variable of useRef to get display in DOM.
+
+    - if you are storing the elements properties in useRef's variable then, it is not recommended to manipulate the element
+      through useRef's variable if our state-variable is manipulating the same element.
+
+      
+

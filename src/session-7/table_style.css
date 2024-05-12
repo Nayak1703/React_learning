@@ -1,0 +1,23 @@
+.table-div {
+    width: 100vw;
+    min-height:  50vh;
+    /* background-color:bisque; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    text-align: center;
+}
+
+table, tr, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+td {
+    min-width: 60px;
+}
+
+tr {
+    height: 30px;
+}
