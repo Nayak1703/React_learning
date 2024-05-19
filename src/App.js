@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.css';
+import Testing from "./practice/testing.jsx"
 // import Counter from "./session-2/counter.jsx"
 // import Forms from "./session-3/Forms.js"
 // import ThForm from './session-2/thForm';
 // import LifeCycleComponent from "./session-4/lifecycleComponents.jsx"
-import BookAppointment from './session-4/BookAppointment_th.jsx';
+// import BookAppointment from './session-4/BookAppointment_th.jsx';
 // import DogPics from "./session-3/thDogPics.jsx";
 // import Fc_1 from "./session-4/functionComponent.jsx"
 // import Counter_useEffect from "./session-5/useEffect.jsx"
@@ -14,6 +15,7 @@ import BookAppointment from './session-4/BookAppointment_th.jsx';
 // import UseRefExplain from './session-7/useRef.jsx'
 // import LearningMaterialUi from './session-7/materialUi.jsx'
 // import TableGenerateTask from "./session-7/table-task.jsx"
+import DebouncingImplementation from './session-8/debouncing-2.jsx';
 
 
 class App extends React.Component {
@@ -32,6 +34,9 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
+
+      {/* ======> Testing-practice <======*/}
+      {/* <Testing/>       */}
 
       {/* ======> session-2 * <====== */}
       
@@ -68,7 +73,7 @@ class App extends React.Component {
       {/* <Fc_1 name={"yash"} diff={10}/> */}
 
       {/* take home activity of session-4, BookAppointment */}
-      <BookAppointment/>
+      {/* <BookAppointment/> */}
 
 
       {/* ======> session-5 * <====== */}
@@ -102,6 +107,12 @@ class App extends React.Component {
       {/* <LearningMaterialUi/> */}
 
       {/* <TableGenerateTask/> */}
+
+
+      {/* ======> session-8 (Debouncing (part-2), Qkart module-1 discuss, How to think, when to use useState, useEffect.) * <====== */}
+
+      <DebouncingImplementation/>
+
 
     </div>
     )

@@ -1,0 +1,107 @@
+<mxfile host="65bd71144e">
+    <diagram id="YIZn0dxnT1S36LSai-sX" name="Page-1">
+        <mxGraphModel dx="3310" dy="1990" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="Clouser function" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;spacing=1;fontSize=18;fontFamily=Comic Sans MS;fontColor=#FFFF99;" parent="1" vertex="1">
+                    <mxGeometry x="130" y="180" width="160" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" style="edgeStyle=none;html=1;fontFamily=Helvetica;fontSize=18;fontColor=#FFFF99;" parent="1" source="4" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="600" y="335" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="4" value="&lt;font face=&quot;Helvetica&quot;&gt;const debounce (func, delay) {&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;let timeOutId;&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;return function (...args) {&lt;br&gt;&lt;span style=&quot;white-space: pre; font-size: 15px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;if(timeOutId)&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;clearTimeout(timeOutId)&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;timeOutId = setTimeout(()=&amp;gt;func(...args), delay)&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;}&lt;br&gt;}&lt;/font&gt;" style="whiteSpace=wrap;html=1;fontFamily=Comic Sans MS;fontSize=18;align=left;verticalAlign=top;spacingTop=-1;" parent="1" vertex="1">
+                    <mxGeometry x="130" y="220" width="400" height="230" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" style="edgeStyle=none;html=1;fontFamily=Helvetica;fontSize=18;fontColor=#c21300;" parent="1" source="6" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="905" y="420" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="6" value="&lt;font color=&quot;#ffffff&quot;&gt;const debounceFunc = useRef(&lt;/font&gt;&lt;span style=&quot;color: rgb(240, 240, 240);&quot;&gt;debounce(handleInputText,1000)).current&lt;/span&gt;" style="whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=18;fontColor=#FFFF99;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="610" y="315" width="590" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="&lt;span style=&quot;color: rgb(255, 255, 153); font-family: &amp;quot;Comic Sans MS&amp;quot;; font-size: 18px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;Calling&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: rgb(255, 255, 153); font-family: &amp;quot;Comic Sans MS&amp;quot;; font-size: 18px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;Clouser function (parent-function)&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;fontSize=18;fontFamily=Helvetica;fontColor=#FFFF99;labelBackgroundColor=default;" parent="1" vertex="1">
+                    <mxGeometry x="610" y="260" width="360" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" style="edgeStyle=none;html=1;fontSize=16;fontColor=#FFFFFF;" parent="1" source="17" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="910" y="640" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="23" style="edgeStyle=none;html=1;fontSize=18;fontColor=#FFFFFF;" parent="1" source="17" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1220" y="650" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="1210" y="540"/>
+                            <mxPoint x="1230" y="590"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="17" value="&lt;div&gt;debounceFunc&amp;nbsp; =&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&#9;&#9;&#9;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;function (...args) {&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&#9;&#9;&#9;&#9;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;if(timeOutId)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&#9;&#9;&#9;&#9;&#9;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;clearTimeout(timeOutId)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&#9;&#9;&#9;&#9;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;timeOutId = setTimeout(()=&amp;gt;func(...args), delay)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&#9;&#9;&#9;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;}&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;labelBackgroundColor=none;labelBorderColor=none;fontSize=16;fontColor=#FFFFFF;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="695" y="430" width="420" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;font face=&quot;Comic Sans MS&quot;&gt;in backend debounceFunc stored the function&lt;/font&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;fontSize=18;fontFamily=Helvetica;fontColor=#FFFF99;labelBackgroundColor=default;" parent="1" vertex="1">
+                    <mxGeometry x="950" y="390" width="240" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" style="edgeStyle=none;html=1;fontSize=18;fontColor=#CC99FF;fontStyle=1" parent="1" source="20" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="909.9999999999998" y="790" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="20" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;After returning a function (child function) debounce function (parent-function) will get destroyed (remove from call-stack)&lt;/font&gt;" style="whiteSpace=wrap;html=1;labelBackgroundColor=none;labelBorderColor=none;fontSize=16;fontColor=#ffffff;fillColor=#d80073;strokeColor=#A50040;" parent="1" vertex="1">
+                    <mxGeometry x="740" y="650" width="290" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" style="edgeStyle=none;html=1;fontSize=18;fontColor=#FFFFFF;" parent="1" source="22" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1360" y="540" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="22" value="Then how debounceFunc() can access its parent's (debounc-function) variable&lt;br&gt;(func, delay, timeOutId) ?" style="whiteSpace=wrap;html=1;labelBackgroundColor=none;labelBorderColor=none;fontSize=18;fontColor=#ffffff;fillColor=#a0522d;strokeColor=#6D1F00;" parent="1" vertex="1">
+                    <mxGeometry x="1080" y="670" width="350" height="105" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="&lt;font color=&quot;#000000&quot;&gt;1. In Clouser (it return a function), along with&amp;nbsp;function, in backend it also give copy of all the variables &amp;amp; its values of parent-function which is used in child-function.&lt;br&gt;&lt;br&gt;2. so that, when parent function is destroyed after execution (remove from call-stack), child function (function that got return) will see its own local-memory and if it finds any data it will used it,&amp;nbsp; if not then&lt;br&gt;&lt;br&gt;3. inner-function will check its &quot;scope-memory&quot; which is attached to the inner-function that got returned. &lt;br&gt;&lt;br&gt;4. in &quot;scope-memory&quot; inner-function will find all the copy of variable-with-its-value of the parent-function that is used in inner-function.&lt;br&gt;&lt;br&gt;5. Then it will use copy of varibales of parent function &lt;/font&gt;&lt;font color=&quot;#000000&quot;&gt;to execute the inner-function, this is done in behind the sence by javascript engine&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;labelBackgroundColor=none;labelBorderColor=none;fontSize=18;fillColor=#d0cee2;strokeColor=#56517e;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="1300" y="130" width="800" height="375" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" style="edgeStyle=none;html=1;fontSize=18;fontColor=#CC99FF;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="29" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1230" y="790" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="1230" y="900"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="29" value="&lt;font color=&quot;#ffffff&quot;&gt;useEffect(()=&amp;gt;{&lt;/font&gt;&lt;br&gt;&lt;span style=&quot;color: rgb(255, 255, 255); white-space: pre;&quot;&gt;&#9;&lt;/span&gt;&lt;font color=&quot;#ffffff&quot;&gt;if(searchInput)&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#cc99ff&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;debounceFunc(searchInput)&lt;br&gt;&lt;/font&gt;&lt;font color=&quot;#ffffff&quot;&gt;},[searchInput])&lt;/font&gt;&lt;br&gt;" style="whiteSpace=wrap;html=1;labelBackgroundColor=none;labelBorderColor=none;fontSize=18;fontColor=#000000;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="745" y="800" width="320" height="210" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="&lt;div&gt;debounceFunc&amp;nbsp; =&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&#9;&#9;&#9;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;function (...args) {&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&#9;&#9;&#9;&#9;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;if(timeOutId)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&#9;&#9;&#9;&#9;&#9;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;clearTimeout(timeOutId)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&#9;&#9;&#9;&#9;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;timeOutId = setTimeout(()=&amp;gt;func(...args), delay)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;&#9;&#9;&#9;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;} &lt;font color=&quot;#ff0000&quot;&gt;[func, delay, timeOutId]&lt;/font&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;labelBackgroundColor=none;labelBorderColor=none;fontSize=16;align=left;fillColor=#fad9d5;strokeColor=#ae4132;fontColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="1520" y="550" width="420" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" value="In behind the sence&lt;br&gt;done by javascript" style="whiteSpace=wrap;html=1;fillColor=#FF0000;strokeColor=#b85450;" parent="1" vertex="1">
+                    <mxGeometry x="1850" y="530" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#FF0000;entryX=0.405;entryY=0.824;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=#FF0000;exitX=1.002;exitY=0.536;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="28" target="33" edge="1">
+                    <mxGeometry width="100" relative="1" as="geometry">
+                        <mxPoint x="1710" y="810" as="sourcePoint"/>
+                        <mxPoint x="1810" y="810" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="2160" y="520"/>
+                            <mxPoint x="2000" y="740"/>
+                            <mxPoint x="1710" y="770"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="37" style="edgeStyle=none;html=1;fontSize=19;fontColor=#000000;" edge="1" parent="1" source="36">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="2110" y="170" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="36" value="&lt;font style=&quot;font-size: 19px;&quot;&gt;Every function have its own &quot;local-memory&quot; and &quot;Scope memory&quot;.&lt;br style=&quot;font-size: 19px;&quot;&gt;&lt;br style=&quot;font-size: 19px;&quot;&gt;&lt;b style=&quot;font-size: 19px;&quot;&gt;local-memory:&lt;/b&gt; the varibales which is define within the function.&lt;br style=&quot;font-size: 19px;&quot;&gt;&lt;br style=&quot;font-size: 19px;&quot;&gt;&lt;b style=&quot;font-size: 19px;&quot;&gt;Scope-memory:&lt;/b&gt; it is hidden memory, which is given by javascript engine,&lt;br style=&quot;font-size: 19px;&quot;&gt;in normal function the scope-memory will be empty, but when we are returning the&amp;nbsp;&lt;br style=&quot;font-size: 19px;&quot;&gt;function from the function then, inner function's Scope-memory will have all the varibale &amp;amp; value of the parent function that are been used in inner-function.&lt;br style=&quot;font-size: 19px;&quot;&gt;so with the help of the Scope-memory inner-function will execute its own function.&lt;br style=&quot;font-size: 19px;&quot;&gt;&lt;br style=&quot;font-size: 19px;&quot;&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;align=left;verticalAlign=top;fontSize=19;spacingTop=0;fillColor=#fad9d5;strokeColor=#ae4132;fontColor=#000000;spacing=6;" vertex="1" parent="1">
+                    <mxGeometry x="2180" y="50" width="760" height="240" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
