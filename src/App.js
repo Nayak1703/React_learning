@@ -15,7 +15,8 @@ import Testing from "./practice/testing.jsx"
 // import UseRefExplain from './session-7/useRef.jsx'
 // import LearningMaterialUi from './session-7/materialUi.jsx'
 // import TableGenerateTask from "./session-7/table-task.jsx"
-import DebouncingImplementation from './session-8/debouncing-2.jsx';
+// import DebouncingImplementation from './session-8/debouncing-2.jsx';
+import Home from './session-10_(Pagination)/home.jsx'
 
 
 class App extends React.Component {
@@ -111,8 +112,17 @@ class App extends React.Component {
 
       {/* ======> session-8 (Debouncing (part-2), Qkart module-1 discuss, How to think, when to use useState, useEffect.) * <====== */}
 
-      <DebouncingImplementation/>
+      {/* <DebouncingImplementation/> */}
 
+
+      {/* ======> session-9 (Redux (part-1), Theory) * <====== */}
+
+      {/* <DebouncingImplementation/> */}
+
+
+      {/* ======> session-10 (Pagination) * <====== */}
+
+      <Home/>
 
     </div>
     )
