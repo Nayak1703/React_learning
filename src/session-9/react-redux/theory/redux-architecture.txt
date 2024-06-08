@@ -1,0 +1,33 @@
+what is the Redux-Architecture
+=>  We cant update the state inside store directly, so we have to follow the Architecture 
+    see the Redux-Architecture on draw.io
+
+    Lets breakdown the Architecture
+    a. UI-Layer: 
+        -   Things we see on the webPage is UI-Layer.
+        -   By doing some actions on webpage like (clicking-button, scrolling, adjusting-viewport-size, etc...)
+            a handler-function associated to that action will get trigger.
+    
+    b. Handler-Function:
+        -   This function will have the particular task associate to the action done by user.
+        -   Those task will get executed and it will dispatch the action done by user to the Redux-Store
+    
+    c. Redux-Store:
+        -   Redux-Store have 2 things Reducer-Function(to execute the action)  and State (to store & update all the state).
+        -   As soon as the action recived by Handler-Function, to Redux-store.
+        -   Redux-Store will send those action to the Reducer function, Reducer-function will execute will execute its
+            function based on the action and update the state.
+        -   Once the State is updated, it will reflect the UI 
+
+    
+=> so redux is the global-state-management-library (any component can use those state or update those state).
+    Redux is third-party-library (it is not created by React-team-meta)
+
+
+=> In production we dont use normal React-Redux but we use React-Redux-toolkit,
+    it is powerfull library and it make lots of thing simpler and make them automate.
+
+    - if you go to the store.js inside redux/ and hover on the createStore() you will see createStore() is deprecated
+      and redux itself recommended to use redux-toolkit and its methods configureStore()
+    - react-redux is only for understanding purpose how react-redux architecture work
+    - in real-world we always use react-redux-toolkit

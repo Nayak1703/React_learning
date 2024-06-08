@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Testing from "./practice/testing.jsx"
+// import Testing from "./practice/testing.jsx"
 // import Counter from "./session-2/counter.jsx"
 // import Forms from "./session-3/Forms.js"
 // import ThForm from './session-2/thForm';
@@ -16,7 +16,10 @@ import Testing from "./practice/testing.jsx"
 // import LearningMaterialUi from './session-7/materialUi.jsx'
 // import TableGenerateTask from "./session-7/table-task.jsx"
 // import DebouncingImplementation from './session-8/debouncing-2.jsx';
-import Home from './session-10_(Pagination)/home.jsx'
+// import Home from './session-10_(Pagination)/home.jsx'
+// import Temperature from './session-10_interviewChallenge/temperature.jsx';
+// import Counter from './session-9/react-redux/counter.jsx';
+import ProductPage from './session-9/react-redux-toolkit/productPage.jsx';
 
 
 class App extends React.Component {
@@ -115,15 +118,17 @@ class App extends React.Component {
       {/* <DebouncingImplementation/> */}
 
 
-      {/* ======> session-9 (Redux (part-1), Theory) * <====== */}
+      {/* ======> session-9 (React-Redux, React-Redux-ToolKit) * <====== */}
 
-      {/* <DebouncingImplementation/> */}
+      {/* <Counter/> */}
+      <ProductPage/>
 
 
       {/* ======> session-10 (Pagination) * <====== */}
+      {/* <Home/> */}
 
-      <Home/>
-
+      {/* interview challenge */}
+      {/* <Temperature/> */}
     </div>
     )
   }

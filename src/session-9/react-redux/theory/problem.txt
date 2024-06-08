@@ -1,0 +1,38 @@
+What is the problem?
+=>  1. Suppose we have 2 components <productAdd/> & <cart/>
+    2. When we add the products in <productAdd/> component then number of product in <cart/> component should get increase
+    3. We can achive this by adding <cart/> inside <productAdd/> sending state (counter) as props from <productAdd/> to <cart/>
+    4. suppose we have complex ui <productAdd/> is great-great-great-grand-parent component of <cart/>
+    5. so to access the state of the <productAdd/> inside <cart/> we have to pass the state of <productAdd/> to all the
+        nested child component, and it will goes down to <cart/> so that it can access the state (counter) of <productAdd/>
+    6. This is called Prop-drilling, see the image in draw.io 
+
+    7. suppose there are 2 sibling component <child-1/> & <child-2/>, <child-2/> want to access the state of <child-1/>
+    8. so to achive that, we have to remove the state from <child-1/> and add the state to there same <parent/>
+    9. and <parent/> state will pass tha state to both the component <child-1/> & <child-2/>
+    10. in this is way both child component have the access of the same-state.
+    11. suppose we have complex Ui, that parent of <child-1/> & parent of <child-2/> is also sibling and there parent is 
+        also sibling.
+    12. in this case we have to add state in to comman parent component and pass down the state as prop which have <child-1/> & <child-2/>
+        
+        passing state from <child/> to <parent/> is called  state-lifiting (example-1)
+        passing state from <parent/> to <child/> is called Prop-drilling (example-2)
+
+    13. in complex-Ui if <component-1/> is great-great-great-great-grand-parent of <component-2/> and <component-1/>'s 
+        state is depended on the <component-2/> Functionality.
+    14. then <component-1/> will pass the function as a prop and that function will change the state of <component-1/>
+    15. then prop that is carring the function to change the state of <component-1/> will passed down to all the nested
+        child, till prop reaches to the <component-2/>.
+    16. and <component-2/> will use the prop and change the state of the <component-1/>
+
+
+    17. These is the problem, it will be difficult to do prop-drilling or prop-lifting in complex ui, and if we shift 
+        <child/> component to differnet parent then also we have to rewrite the code which is also difficult.
+        so we need a store were we can keep all the state and we can use or change those state inside any component 
+        according to our need, so there is no need to do prop-drilling or prop-lifting
+        check example in drawio (example-3)
+
+    18. So this is solved by redux, it make a store where we can store all the state, and the component which want to use those state,
+        they can use the state and if the state changes it will affect all the components which are using those state.
+
+

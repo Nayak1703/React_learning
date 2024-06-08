@@ -1,0 +1,8 @@
+1. What is react and why it is used?
+->  1. React is a js library, we can use react to make frontend web application. 
+    2. it is used to solve the major problems like frequent-painting process, structure of code, repetation of code, etc.
+    3. Because of this problem vanila-js is difficult to scale, read or to optimize the performace
+    4. React bring concept of VDom, single-page-application, components-architecture, packages, etc to solve all these problems.
+
+2. Explain Virtual Dom and its working?
+->  1.   
