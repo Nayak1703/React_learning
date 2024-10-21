@@ -1,0 +1,3 @@
+Debouncing -- cover in part-1 of react-learning
+Lifting State Up Technique  -- done see parent, child1, child2
+QKart Frontend Module 3 Approach

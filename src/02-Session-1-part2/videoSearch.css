@@ -1,0 +1,46 @@
+/* .videoSearch {
+  padding: 1rem;
+} */
+.searchInput {
+  text-align: center;
+  background-color: crimson;
+  height: 7vh;
+}
+.searchInput form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.searchInput form input,
+.searchInput form button {
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.searchInput form input {
+  width: 30%;
+}
+
+.searchInput form button {
+  width: 60px;
+  background-color: brown;
+  color: white;
+  cursor: pointer;
+}
+
+.searchInput form button:hover {
+  background-color: rgb(102, 12, 12);
+}
+
+.cardsParent {
+  padding: 1rem;
+  background-color: rgb(255, 223, 212);
+  min-height: 100vh;
+}
+.card {
+  min-height: 300px;
+}

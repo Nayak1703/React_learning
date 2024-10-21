@@ -1,0 +1,6 @@
+Generic Solution Approach for Take-home Assignments
+Frontend Breakdown
+ReactJS local setup
+QTify Intro
+3rd party UI library integration : Swiper Carousel with custom navigation
+Module-scoped CSS
