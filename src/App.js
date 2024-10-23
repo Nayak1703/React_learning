@@ -24,7 +24,10 @@ import "./App.css";
 // FE-202
 // import VideoSearch from "./02-Session-1-part2/videoSearch";
 // import Parent from "./02-session-2-part2/Parent";
-
+// import Parent1 from "./02-session-7-part2/css-module/parent";
+// import Parent from "./02-session-7-part2/no-css-module/parent";
+// import SwiperTest from "./02-session-7-part2/swiper";
+import TvShows from "./02-session-8-part2/tabs/tvShows";
 class App extends React.Component {
   constructor() {
     super();
@@ -121,11 +124,29 @@ class App extends React.Component {
         {/* <Home /> */}
 
         {/* interview challenge */}
-        <Temperature />
+        {/* <Temperature /> */}
 
         {/* ========>   FE_202 (react)  <============ */}
-        <VideoSearch />
-        <Parent />
+
+        {/* session-1-part-2 */}
+        {/* <VideoSearch /> */}
+
+        {/* session-2-part2 */}
+        {/* <Parent /> */}
+
+        {/* session-7-part2 */}
+
+        {/* css-moduled */}
+        {/* <Parent1 /> */}
+
+        {/* no-css-moduled */}
+        {/* <Parent /> */}
+
+        {/* Swiper js */}
+        {/* <SwiperTest /> */}
+
+        {/* Session-8 */}
+        <TvShows />
       </div>
     );
   }

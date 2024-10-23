@@ -1,0 +1,21 @@
+.heading {
+  padding: 0.5rem;
+  background-color: aqua;
+}
+
+.tabsList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: cornsilk;
+}
+
+.movieCardList {
+  padding: 1rem;
+  background-color: rgb(243, 243, 5);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  min-height: 100vh;
+}
